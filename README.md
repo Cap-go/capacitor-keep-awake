@@ -1,6 +1,28 @@
-# @capgo/keep-awake
+# capacitor-keep-awake
+  <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
 
+<div align="center">
+  <h2><a href="https://capgo.app/?ref=plugin_keep_awake"> ➡️ Get Instant updates for your App with Capgo</a></h2>
+  <h2><a href="https://capgo.app/consulting/?ref=plugin_keep_awake"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+</div>
 Prevent the device screen from dimming or sleeping.
+
+## Why Capacitor Keep Awake?
+
+A simple, **free**, and **lightweight** screen wake lock plugin:
+
+- **Keep screen on** - Prevent device from dimming or sleeping
+- **Status checking** - Query current wake lock state
+- **Platform support** - Check if wake lock is available on current platform
+- **Universal compatibility** - Works across iOS, Android, and web
+- **Modern package management** - Supports both Swift Package Manager (SPM) and CocoaPods (SPM-ready for Capacitor 8)
+- **Zero dependencies** - Minimal footprint, no bloat
+
+Perfect for video players, navigation apps, games, presentations, and any app that needs the screen to stay on.
+
+## Documentation
+
+The most complete doc is available here: https://capgo.app/docs/plugins/keep-awake/
 
 ## Install
 
@@ -8,6 +30,18 @@ Prevent the device screen from dimming or sleeping.
 npm install @capgo/keep-awake
 npx cap sync
 ```
+
+## iOS
+
+Works out of the box. Uses `UIApplication.shared.isIdleTimerDisabled` to control screen sleep.
+
+## Android
+
+Works out of the box. Uses `WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON` flag. No permissions required.
+
+## Web
+
+Works in modern browsers that support the Screen Wake Lock API. Call `isSupported()` first to check if wake lock is available on the current browser.
 
 ## API
 
@@ -119,39 +153,3 @@ Result of the isKeptAwake() method.
 | **`isKeptAwake`** | <code>boolean</code> | Whether the device is currently being kept awake. | 1.0.0 |
 
 </docgen-api>
-
-## Usage
-
-```typescript
-import { KeepAwake } from '@capgo/keep-awake';
-
-// Check if keep awake is supported
-const { isSupported } = await KeepAwake.isSupported();
-console.log('Keep awake supported:', isSupported);
-
-// Prevent the screen from sleeping
-await KeepAwake.keepAwake();
-
-// Check if currently kept awake
-const { isKeptAwake } = await KeepAwake.isKeptAwake();
-console.log('Is kept awake:', isKeptAwake);
-
-// Allow the screen to sleep again
-await KeepAwake.allowSleep();
-```
-
-## Platform Support
-
-| Platform | Supported |
-| -------- | --------- |
-| iOS      | Yes       |
-| Android  | Yes       |
-| Web      | Yes (using Wake Lock API) |
-
-### Web Platform Notes
-
-The web implementation uses the [Screen Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API). This API is supported in most modern browsers but may not be available in all environments. Use `isSupported()` to check if the feature is available.
-
-## License
-
-MPL-2.0
