@@ -1,6 +1,6 @@
 {
   "name": "@capgo/keep-awake",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "description": "Prevent the device screen from dimming or sleeping.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
