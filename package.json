@@ -24,6 +24,7 @@
   "bugs": {
     "url": "https://github.com/Cap-go/capacitor-keep-awake/issues"
   },
+  "homepage": "https://capgo.app/docs/plugins/keep-awake/",
   "keywords": [
     "capacitor",
     "keep-awake",
