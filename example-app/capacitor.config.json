@@ -1,0 +1,10 @@
+{
+  "appId": "app.capgo.keepawake",
+  "appName": "Keep Awake Example",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
