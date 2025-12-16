@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-keep-awake",
-  "version": "8.1.1",
+  "version": "8.1.2",
   "description": "Prevent the device screen from dimming or sleeping.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
