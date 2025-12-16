@@ -1,2 +1,5 @@
+build
 dist
-node_modules
+example-app
+docs
+android/build

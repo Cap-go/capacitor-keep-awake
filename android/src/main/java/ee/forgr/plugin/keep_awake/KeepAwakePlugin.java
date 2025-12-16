@@ -15,30 +15,28 @@ public class KeepAwakePlugin extends Plugin {
 
     @PluginMethod
     public void keepAwake(PluginCall call) {
-        getActivity()
-            .runOnUiThread(() -> {
-                try {
-                    getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-                    isKeptAwake = true;
-                    call.resolve();
-                } catch (Exception e) {
-                    call.reject("Failed to enable keep awake", e);
-                }
-            });
+        getActivity().runOnUiThread(() -> {
+            try {
+                getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                isKeptAwake = true;
+                call.resolve();
+            } catch (Exception e) {
+                call.reject("Failed to enable keep awake", e);
+            }
+        });
     }
 
     @PluginMethod
     public void allowSleep(PluginCall call) {
-        getActivity()
-            .runOnUiThread(() -> {
-                try {
-                    getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-                    isKeptAwake = false;
-                    call.resolve();
-                } catch (Exception e) {
-                    call.reject("Failed to disable keep awake", e);
-                }
-            });
+        getActivity().runOnUiThread(() -> {
+            try {
+                getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                isKeptAwake = false;
+                call.resolve();
+            } catch (Exception e) {
+                call.reject("Failed to disable keep awake", e);
+            }
+        });
     }
 
     @PluginMethod

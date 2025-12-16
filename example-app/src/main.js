@@ -1,4 +1,3 @@
-
 import './style.css';
 import { KeepAwake } from '@capgo/keep-awake';
 
