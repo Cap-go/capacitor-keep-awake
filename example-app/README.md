@@ -1,6 +1,6 @@
-# @capgo/keep-awake Example App
+# @capgo/capacitor-keep-awake Example App
 
-This is a simple example app demonstrating the @capgo/keep-awake Capacitor plugin.
+This is a simple example app demonstrating the @capgo/capacitor-keep-awake Capacitor plugin.
 
 ## Getting Started
 

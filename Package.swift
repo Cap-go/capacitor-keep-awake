@@ -2,27 +2,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "CapgoKeepAwake",
+    name: "CapgoCapacitorKeepAwake",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "CapgoKeepAwake",
-            targets: ["KeepAwakePlugin"])
+            name: "CapgoCapacitorKeepAwake",
+            targets: ["CapacitorKeepAwakePlugin"])
     ],
     dependencies: [
         .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0")
     ],
     targets: [
         .target(
-            name: "KeepAwakePlugin",
+            name: "CapacitorKeepAwakePlugin",
             dependencies: [
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
-            path: "ios/Sources/KeepAwakePlugin"),
+            path: "ios/Sources/CapacitorKeepAwakePlugin"),
         .testTarget(
-            name: "KeepAwakePluginTests",
-            dependencies: ["KeepAwakePlugin"],
-            path: "ios/Tests/KeepAwakePluginTests")
+            name: "CapacitorKeepAwakePluginTests",
+            dependencies: ["CapacitorKeepAwakePlugin"],
+            path: "ios/Tests/CapacitorKeepAwakePluginTests")
     ]
 )

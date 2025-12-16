@@ -6,11 +6,11 @@ import UIKit
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(KeepAwakePlugin)
-public class KeepAwakePlugin: CAPPlugin, CAPBridgedPlugin {
+@objc(CapacitorKeepAwakePlugin)
+public class CapacitorKeepAwakePlugin: CAPPlugin, CAPBridgedPlugin {
     private let pluginVersion: String = "8.1.1"
-    public let identifier = "KeepAwakePlugin"
-    public let jsName = "KeepAwake"
+    public let identifier = "CapacitorKeepAwakePlugin"
+    public let jsName = "CapacitorKeepAwake"
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "keepAwake", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "allowSleep", returnType: CAPPluginReturnPromise),

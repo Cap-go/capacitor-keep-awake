@@ -27,7 +27,7 @@ The most complete doc is available here: https://capgo.app/docs/plugins/keep-awa
 ## Install
 
 ```bash
-npm install @capgo/keep-awake
+npm install @capgo/capacitor-keep-awake
 npx cap sync
 ```
 

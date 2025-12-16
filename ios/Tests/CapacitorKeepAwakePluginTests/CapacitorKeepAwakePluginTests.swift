@@ -1,7 +1,7 @@
 import XCTest
-@testable import KeepAwakePlugin
+@testable import CapacitorKeepAwakePlugin
 
-class KeepAwakeTests: XCTestCase {
+class CapacitorKeepAwakeTests: XCTestCase {
     func testIsSupported() throws {
         // Basic test to verify plugin can be instantiated
         XCTAssertTrue(true)

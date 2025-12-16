@@ -1,4 +1,4 @@
-package ee.forgr.plugin.keep_awake;
+package ee.forgr.plugin.capacitor_keep_awake;
 
 import android.view.WindowManager;
 import com.getcapacitor.JSObject;
@@ -7,8 +7,8 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "KeepAwake")
-public class KeepAwakePlugin extends Plugin {
+@CapacitorPlugin(name = "CapacitorKeepAwake")
+public class CapacitorKeepAwakePlugin extends Plugin {
 
     private final String pluginVersion = "8.1.1";
     private boolean isKeptAwake = false;

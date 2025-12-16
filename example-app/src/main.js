@@ -1,5 +1,5 @@
 import './style.css';
-import { KeepAwake } from '@capgo/keep-awake';
+import { KeepAwake } from '@capgo/capacitor-keep-awake';
 
 const plugin = KeepAwake;
 
