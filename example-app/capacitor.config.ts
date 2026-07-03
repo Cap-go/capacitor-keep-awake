@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.keepawake',
-  appName: 'Keep Awake Example',
+  appName: '@capgo/capacitor-keep-awake',
   webDir: 'dist',
   plugins: {
     SplashScreen: {
