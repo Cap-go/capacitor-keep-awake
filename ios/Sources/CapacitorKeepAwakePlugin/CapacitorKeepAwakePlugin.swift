@@ -8,7 +8,7 @@ import UIKit
  */
 @objc(CapacitorKeepAwakePlugin)
 public class CapacitorKeepAwakePlugin: CAPPlugin, CAPBridgedPlugin {
-    private let pluginVersion: String = "8.1.15"
+    private let pluginVersion: String = "8.1.16"
     public let identifier = "CapacitorKeepAwakePlugin"
     public let jsName = "CapacitorKeepAwake"
     public let pluginMethods: [CAPPluginMethod] = [
