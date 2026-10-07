@@ -1,11 +1,27 @@
 # capacitor-keep-awake
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-keep-awake" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Keep the screen on while users watch, read, navigate or follow a recipe in your Capacitor app, then let it sleep again when they are done.
+
+<a href="https://capgo.app/?ref=plugin_keep_awake"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-keep-awake" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_keep_awake"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_keep_awake"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_keep_awake">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_keep_awake">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
-Prevent the device screen from dimming or sleeping.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-keep-awake/main/assets/github-social-preview.png" alt="@capgo/capacitor-keep-awake for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Keep awake**: `keepAwake()` stops the screen from dimming or locking.
+- **Allow sleep**: `allowSleep()` restores the normal timeout.
+- **State**: `isKeptAwake()` reports whether keep awake is active.
+- **Support check**: `isSupported()` tells you if the current platform can do it.
+- **Platforms**: iOS, Android and Web. Web uses the Screen Wake Lock API where the browser supports it.
 
 ## Why Capacitor Keep Awake?
 
