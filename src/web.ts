@@ -20,7 +20,7 @@ export class KeepAwakeWeb extends WebPlugin implements KeepAwakePlugin {
         throw new Error('Wake Lock API is not supported');
       }
     } catch (e) {
-      throw new Error(`Failed to enable keep awake: ${e}`);
+      throw new Error(`Failed to enable keep awake: ${e}`, { cause: e });
     }
   }
 
